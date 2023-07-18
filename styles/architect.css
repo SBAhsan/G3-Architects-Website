@@ -300,6 +300,32 @@ main {
     margin-top: 10px;
 }
 
+/* sponsor styles */
+.sponsor{
+    text-align: center;
+}
+.sponsor-title{
+    color: #131313;
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 100px;
+    padding-bottom: 24px;
+}
+.sponsor-para{
+    width: 560px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 24px;
+    padding-left: 395px;
+    padding-bottom: 50px;
+}
+.sponsor-logos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 /* responsive media queries */
 /* for mobile phone */
@@ -348,9 +374,6 @@ main {
     .details-feat-container{
         flex-direction: column;
         text-align: center;
-    }
-    .details-feat-title{
-        
     }
     .details-feat-para{
         width: 350px;
