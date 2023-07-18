@@ -40,7 +40,7 @@ nav {
 .nav-title {
     color: #131313;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 nav>ul {
@@ -124,7 +124,7 @@ main {
     padding-bottom: 30px;
 }
 
-.feature-texts{
+.feature-texts {
     width: 490px;
 }
 
@@ -159,10 +159,121 @@ main {
 }
 
 
+/* details feature styles */
+.details-feat-container {
+    display: flex;
+    gap: 150px;
+}
+
+.details-feat-title {
+    width: 360px;
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 35px;
+    font-weight: 800;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-top: 150px;
+}
+
+.details-feat-para {
+    width: 480px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 24px;
+}
+
+.feat-boxes {
+    padding-top: 10px;
+}
+
+.feat-boxes .box {
+    width: 580px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    margin-top: 20px;
+}
+
+.feat-box-title {
+    color: #131313;
+    font-family: Work Sans;
+    font-weight: 600;
+    padding-top: 30px;
+    margin-left: 40px;
+}
+
+.feat-box-para {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 10px 40px 30px 40px;
+}
+
+.feat-img {
+    width: 708px;
+    height: 982px;
+    
+}
+
+
+/* facts styles */
+
+.fact-title {
+    color: #131313;
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 150px;
+    padding-bottom: 24px;
+    padding-left: 100px;
+}
+
+.fact-para {
+    width: 500px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+
+.fact-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 55px;
+}
+
+.fact-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.card-title {
+    color: #424242;
+    font-family: Work Sans;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card-stat {
+    color: #727272;
+    font-family: Work Sans;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 
 /* responsive media queries */
 /* for mobile phone */
 @media screen and (max-width: 576px) {
+
     /* for header */
     header {
         padding: 20px;
@@ -187,22 +298,47 @@ main {
     }
 
     /* for feature section */
-    .feature-container{
+    .feature-container {
         flex-direction: column-reverse;
         padding-left: 0;
     }
-    .feature-img{
+
+    .feature-img {
         grid-template-columns: 1fr;
     }
-    .feature-texts{
+
+    .feature-texts {
         width: 300px;
         text-align: center;
+    }
+
+
+    /* facts section */
+    .fact-title {
+        padding: 80px 0 20px 70px;
+    }
+
+    .fact-para {
+        width: auto;
+        text-align: center;
+        padding: 0 0 20px 10px;
+    }
+
+    .fact-card-container {
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+    }
+
+    .facts {
+        margin: 0;
     }
 
 }
 
 /* for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
+
     /* for header */
     header {
         padding: 50px;
@@ -225,17 +361,43 @@ main {
     }
 
     /* for feature section */
-    .feature-container{
+    .feature-container {
         flex-direction: column-reverse;
         padding-left: 0;
     }
-    .feature-img{
+
+    .feature-img {
         grid-template-columns: repeat(2, 1fr);
         gap: 2px;
     }
-    .feature-texts{
+
+    .feature-texts {
         width: 400px;
         text-align: center;
         padding: 20px;
+    }
+
+    /* for facts section */
+    .fact-title {
+        padding: 80px 0 20px 0px;
+        text-align: center;
+    }
+
+    .fact-para {
+        width: auto;
+        text-align: center;
+        padding: 0 0 20px 10px;
+    }
+
+    .fact-card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .facts {
+        margin: 0;
+        text-align: center;
     }
 }
